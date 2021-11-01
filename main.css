@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: -400;
+}
+/* ____________________________ */
+.wrapper {
+  position: fixed;
+  width: 340px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -170px;
+  background: #fff;
+}
+.input {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 0 20px;
+  min-height: 58px;
+  background: #f9f9f9;
+  border: 1px solid #aa1aaa;
+  box-sizing: border-box;
+  border-radius: 5px 0 0 5px;
+  color: #737373;
+  border-right: 0;
+  font-size: inherit;
+}
+.input:focus {
+  color: #000;
+}
+.button {
+  background: #aa1aaa;
+  border: 1px solid #aa1aaa;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 22px;
+  color: #ffffff;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 170%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn {
+}
+.head {
+  display: flex;
+}
+.main {
+}
+.li {
+  min-height: 50px;
+  min-width: 330px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(#9c1896, #f500d4);
+  -moz-border-image: -moz-linear-gradient(#9c1896, #f500d4);
+  -webkit-border-image: -webkit-linear-gradient(#9c1896, #f500d4);
+  border-image-slice: 1;
+}
+.li_active {
+  --border-width: 3px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+}
